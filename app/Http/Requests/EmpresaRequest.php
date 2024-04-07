@@ -24,7 +24,7 @@ class EmpresaRequest extends FormRequest
     public function rules()
     {
         return [
-            'business_name' => 'required|string|max:5',
+            'business_name' => 'required|string|max:255',
             'nit' => 'required|string|max:255',
             'verification_digit' => 'required|integer',
             'corporate_email' => 'required|string|email|max:255',
